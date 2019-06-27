@@ -1,0 +1,81 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
+    display: grid;
+    grid:
+        "header header" 100px
+        "main main" 1fr
+    ;
+}
+header {
+    grid-area: header;
+    display: flex;
+    margin: 70px 10rem;
+    background: #5521f5;
+    font-size: 1.1rem;
+}
+header > h1 {
+    align-self: center;
+    color: #5521f5;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+header > nav {
+    width: 100%;
+    display: flex;
+    margin: 0 50px;
+}
+header > nav > a {
+    align-self: center;
+    color: darkgray;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}
+main {
+    grid-area: main;
+    display: grid;
+    /* background: orange; */
+    grid: "adventure image" 1fr / 48% 52%;
+    /* justify-items: center; */
+}
+main > div:first-child {
+    max-width: 370px;
+    /* background: navy; */
+    margin: 80px 0 0 10rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+main > div:first-child > h1 {
+    text-transform: uppercase;
+    color: rgb(73, 73, 73);
+}
+main > div:first-child > p {
+    margin: -10px 0 40px 0;
+    color: darkgray;
+}
+main > div:first-child > button {
+    padding: 15px 40px;
+    background: #5521f5;
+    outline: 0;
+    color: white;
+    border-radius: 40px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+main > div:nth-child(2) {
+    justify-self: stretch;
+    text-align: right;
+}
+main > div:nth-child(2) > img {
+    /* max-width: 500px; */
+    width: 100%;
+    justify-self: stretch;
+}
